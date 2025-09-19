@@ -249,7 +249,8 @@ export default function Home() {
                     whileHover={{ x: 10 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
-                    <h3 className="text-xl font-semibold">AWS Solutions Architect Associate - Inprogress</h3>
+                    <h3 className="text-xl font-semibold">Certifications</h3>
+                    <p className="text-xl font-semibold">AWS Solutions Architect Associate - Inprogress</p>
                     <p className="text-muted-foreground">Terraform Associate (003) - Inprogress</p>
                     <p className="text-muted-foreground">Kubernetes and Cloud Native Associate - Inprogress</p>
                   </motion.div>
