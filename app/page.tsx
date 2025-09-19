@@ -52,7 +52,7 @@ export default function Home() {
       company: "Pay With Ring",
       period: "August 2023 - August 2024",
       description: "Automated reporting with Snowflake & Python (-30% reconciliation effort), engineered stored procedures/validation frameworks for accuracy, and trained teams in Python/BI practices, boosting productivity while delivering timely insights and ad-hoc data support to stakeholders.",
-      skills: ["Python", "Sql", "Data Analytics", "AWS", "Pandas", "Git", "Automation"]
+      skills: ["Python", "SQL", "Data Analytics", "AWS", "Pandas", "Git", "Automation"]
     }
   ];
 /*
