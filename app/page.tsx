@@ -45,7 +45,7 @@ export default function Home() {
       company: "Pay With Ring",
       period: "August 2024 - July 2025",
       description: "Automated workflows with Python/Shell, optimized AWS costs (-15%), and built monitoring with CloudWatch/Grafana; enabled real-time pipeline tracking, processed 20GB+ datasets to cut loan defaults by 12%, and ensured reliable production operations through proactive incident resolution.",
-      skills: ["", "AWS", "Terraform", "GitOps", "Python", "Sql", "Snowflake", "Data Warehouse", "Stored Procedures","Docker", "CI/CD", "Linux"]
+      skills: ["AWS", "Terraform", "GitOps", "Python", "Sql", "Snowflake", "Data Warehouse", "Stored Procedures","Docker", "CI/CD", "Linux"]
     },
     {
       title: "Data Analyst",
