@@ -94,7 +94,7 @@ export default function Home() {
           >
             <div className="absolute inset-0 bg-primary/10 rounded-full blur-xl transform -translate-y-2"></div>
             <img
-              src="/Arvind-Portfolio/images/roshan_profile_pic.jpeg"
+              src="/portfolio/images/roshan_profile_pic.jpeg"
               alt="Profile"
               className="w-40 h-40 rounded-full mb-8 shadow-lg relative z-10 transition-transform duration-300 hover:scale-105"
             />
@@ -103,7 +103,7 @@ export default function Home() {
             variants={fadeIn}
             className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70"
           >
-            Arvind Chaturvedi
+            Roshan Prasad
           </motion.h1>
           <motion.p 
             variants={fadeIn}
