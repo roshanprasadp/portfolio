@@ -94,7 +94,7 @@ export default function Home() {
           >
             <div className="absolute inset-0 bg-primary/10 rounded-full blur-xl transform -translate-y-2"></div>
             <img
-              src="/portfolio/images/roshan_profile_pic.jpeg"
+              src="/images/roshan_profile_pic.jpeg"
               alt="Profile"
               className="w-40 h-40 rounded-full mb-8 shadow-lg relative z-10 transition-transform duration-300 hover:scale-105"
             />
