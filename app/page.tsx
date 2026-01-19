@@ -37,10 +37,47 @@ export default function Home() {
       title: "DevOps Engineer",
       company: "Kissht",
       period: "August 2023 - Present",
-      description: "Led DevOps initiatives by automating deployments, optimizing cloud costs, and containerizing services with Docker & Kubernetes; improved scalability, uptime (99.9%), and reduced setup/deployment time by 40%+ while ensuring seamless collaboration across product and operations teams.",
-      skills: ["AWS", "Terraform", "GitOps", "Docker", "Kubernetes", "CI/CD", "ArgoCD", "Linux", "Prometheus", "Grafana", "Python", "SQL", "Automation", "Snowflake", ]
+      description:
+        "Led DevOps initiatives by automating deployments, optimizing cloud costs, and containerizing services with Docker & Kubernetes; improved scalability, uptime (99.9%), and reduced setup/deployment time by 40%+ while ensuring seamless collaboration across product and operations teams.",
+      skills: [
+        "AWS",
+        "Terraform",
+        "GitOps",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "ArgoCD",
+        "Linux",
+        "Prometheus",
+        "Grafana",
+        "Python",
+        "SQL",
+        "Automation",
+        "Snowflake",
+      ],
+      achievements: [
+        "Executed 30+ monthly production releases across AWS ECS/EC2 environments, maintaining 99%+ uptime",
+        "Improved CI/CD pipelines by fixing build and deployment failures, increasing success rate by 20%+",
+        "Optimized Dockerfiles and images, reducing build time and improving container startup performance",
+        "Designed and managed Terraform-based AWS infrastructure (VPC, ECS, IAM), reducing provisioning time by 80%",
+        "Refactored and modularized Terraform code to eliminate configuration drift and support multi-environment setups",
+        "Supported 150+ microservices serving 54M+ users and $0.5B+ loan disbursals with high availability",
+        "Implemented zero-downtime deployment strategies using Blue/Green and Canary releases",
+        "Reduced AWS cloud spend by $10K+ via rightsizing, autoscaling optimization, and resource cleanup",
+        "Migrated suitable workloads from ECS to AWS Lambda to improve scalability and reduce operational overhead",
+        "Strengthened AWS security by fixing public exposures, dangling DNS records, and over-privileged IAM roles",
+        "Enforced least-privilege IAM policies and hardened security groups and firewall rules",
+        "Built and optimized observability dashboards using CloudWatch, Grafana, and centralized logging",
+        "Improved incident response and RCA by correlating logs, metrics, and traces to reduce MTTR",
+        "Engineered cross-account S3 replication pipelines transferring 10TB+ data using AWS DataSync",
+        "Automated cleanup of unused EC2, ECS, snapshots, volumes, and IAM resources",
+        "Automated operational and reporting workflows using Python and AWS services",
+        "Authored runbooks, upgrade guides, and security documentation to reduce operational risk",
+        "Collaborated cross-functionally with developers, QA, and product teams on architecture and performance improvements"
+      ]
     }
   ];
+}
 /*
   const projects = [
     {
