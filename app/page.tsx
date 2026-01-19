@@ -34,25 +34,11 @@ const staggerChildren = {
 export default function Home() {
   const experiences = [
     {
-      title: "Devops Engineer",
+      title: "DevOps Engineer",
       company: "Kissht",
-      period: "July 2025 - Present",
+      period: "August 2023 - Present",
       description: "Led DevOps initiatives by automating deployments, optimizing cloud costs, and containerizing services with Docker & Kubernetes; improved scalability, uptime (99.9%), and reduced setup/deployment time by 40%+ while ensuring seamless collaboration across product and operations teams.",
-      skills: ["AWS", "Terraform", "GitOps", "Docker", "Kubernetes", "CI/CD", "ArgoCD", "Linux", "Prometheus", "Grafana"]
-    },
-    {
-      title: "Data Engineer",
-      company: "Pay With Ring",
-      period: "August 2024 - July 2025",
-      description: "Automated workflows with Python/Shell, optimized AWS costs (-15%), and built monitoring with CloudWatch/Grafana; enabled real-time pipeline tracking, processed 20GB+ datasets to cut loan defaults by 12%, and ensured reliable production operations through proactive incident resolution.",
-      skills: ["AWS", "Terraform", "GitOps", "Python", "Sql", "Snowflake", "Data Warehouse", "Stored Procedures","Docker", "CI/CD", "Linux"]
-    },
-    {
-      title: "Data Analyst",
-      company: "Pay With Ring",
-      period: "August 2023 - August 2024",
-      description: "Automated reporting with Snowflake & Python (-30% reconciliation effort), engineered stored procedures/validation frameworks for accuracy, and trained teams in Python/BI practices, boosting productivity while delivering timely insights and ad-hoc data support to stakeholders.",
-      skills: ["Python", "SQL", "Data Analytics", "AWS", "Pandas", "Git", "Automation"]
+      skills: ["AWS", "Terraform", "GitOps", "Docker", "Kubernetes", "CI/CD", "ArgoCD", "Linux", "Prometheus", "Grafana", "Python", "SQL", "Automation", "Snowflake", ]
     }
   ];
 /*
