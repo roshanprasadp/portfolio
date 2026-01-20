@@ -207,7 +207,7 @@ export default function Home() {
           </motion.h1>
 
           <motion.p variants={fadeIn} className="text-xl text-muted-foreground mb-6">
-            🛡️ DevSecOps  ☁️ Cloud  📈 SRE  🤖 Agentic AI
+            🛡️ DevSecOps    ☁️ Cloud    📈 SRE    🤖 Agentic AI
           </motion.p>
 
           <motion.div variants={staggerChildren} className="flex gap-4">
