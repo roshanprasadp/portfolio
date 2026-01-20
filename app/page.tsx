@@ -81,7 +81,7 @@ export default function Home() {
       ]
     },
     {
-      title: "CI/CD Automation Project",
+      title: "Ring - CI/CD Automation Project",
       description: [
         "Improved CI/CD reliability with Docker image optimisation, pipeline fixes, and boosting deployment success by 20 percent.",
         "Migrated monolithic workloads to containerised, event-driven architectures, lowering maintenance overhead.",
@@ -99,7 +99,7 @@ export default function Home() {
       ]
     },
     {
-      title: "Cloud and APP Security",
+      title: "Onemi - Cloud and APP Security",
       description: [
         "Strengthened AWS security by removing public exposures, dangling DNS, and enforcing least-privilege IAM.",
         "Hardened network and app security using security groups, firewalls, WAF rules, ORCA fixes, and CORS remediation.",
@@ -116,7 +116,7 @@ export default function Home() {
       ]
     },
     {
-      title: "Cloud Cost Optimisation Project",
+      title: "Onemi - Cloud Cost Optimisation Project",
       description: [
         "Achieved 10K+ dollar cloud savings via rightsizing, automated cleanup, storage tiering, and serverless adoption.",
         "Migrated eligible services from ECS to AWS Lambda, improving scalability and cutting compute and ops overhead.",
