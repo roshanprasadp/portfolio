@@ -38,7 +38,7 @@ export default function Home() {
       company: "Kissht",
       period: "August 2023 - Present",
       description: "Led DevOps initiatives by automating deployments, optimizing cloud costs, and containerizing services with Docker & Kubernetes; improved scalability, uptime (99.9%), and reduced setup/deployment time by 40%+ while ensuring seamless collaboration across product and operations teams.",
-      Skills: ["AWS", "Azure", "Terraform", "GitOps", "Docker", "Kubernetes", "CI/CD", "Jenkins", "HELM", "ArgoCD", "Linux", "Prometheus", "Grafana", "New Relic", "ORCA Security", "Python", "SQL", "Automation", "Snowflake"]
+      skills: ["AWS", "Azure", "Terraform", "GitOps", "Docker", "Kubernetes", "CI/CD", "Jenkins", "HELM", "ArgoCD", "Linux", "Prometheus", "Grafana", "New Relic", "ORCA Security", "Python", "SQL", "Automation", "Snowflake"]
     }
   ];
 /*
