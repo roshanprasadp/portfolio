@@ -243,7 +243,7 @@ export default function Home() {
             <TabsTrigger value="about"><User className="mr-2 h-4 w-4" />About</TabsTrigger>
             <TabsTrigger value="experience"><Briefcase className="mr-2 h-4 w-4" />Experience</TabsTrigger>
             <TabsTrigger value="projects"><Briefcase className="mr-2 h-4 w-4" />Projects</TabsTrigger>
-            <TabsTrigger value="Certifications"><GraduationCap className="mr-2 h-4 w-4" />Certifications</TabsTrigger>
+            {/* <TabsTrigger value="Certifications"><GraduationCap className="mr-2 h-4 w-4" />Certifications</TabsTrigger> */}
             <TabsTrigger value="contact"><MessageSquare className="mr-2 h-4 w-4" />Contact</TabsTrigger>
           </TabsList>
 
@@ -344,7 +344,7 @@ export default function Home() {
 </TabsContent>
 
           {/* ================= CERTIFICATIONS ================= */}
-          <TabsContent value="Certifications" className="mt-6">
+          {/* <TabsContent value="Certifications" className="mt-6">
             <Card>
               <CardContent className="p-6">
                 <p>AWS Solutions Architect Associate – In Progress</p>
@@ -355,7 +355,7 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
-          </TabsContent>
+          </TabsContent> */}
 
           {/* ================= CONTACT ================= */}
           <TabsContent value="contact" className="mt-6">
