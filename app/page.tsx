@@ -190,26 +190,54 @@ export default function Home() {
           </TabsList>
 
           {/* ================= ABOUT / SKILLS ================= */}
-          <TabsContent value="about" className="mt-6">
-            <Card>
-              <CardContent className="p-6">
-                {Object.entries(skillsGrouped).map(([category, groups]) => (
-                  <div key={category} className="mb-8">
-                    <h3 className="text-xl font-semibold mb-4">{category}</h3>
+<TabsContent value="about" className="mt-6">
+  <motion.div initial="hidden" animate="visible" variants={fadeIn}>
+    <Card className="overflow-hidden">
+      <CardContent className="p-6">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
 
-                    {Object.entries(groups).map(([sub, items]) => (
-                      <div key={sub} className="flex flex-wrap items-center gap-2 mb-3">
-                        <span className="font-medium min-w-[160px]">{sub} :</span>
-                        {items.map(skill => (
-                          <Badge key={skill} variant="secondary">{skill}</Badge>
-                        ))}
-                      </div>
-                    ))}
-                  </div>
+        <p className="text-muted-foreground mb-6 leading-relaxed">
+          👋 I’m Roshan Prasad, a results-driven DevOps Engineer specializing in
+          automation and cloud cost optimization, with hands-on expertise in
+          AWS, Kubernetes, Terraform, and CI/CD pipelines for scalable,
+          resilient systems. 🚀💼
+          <br /><br />
+          ✨ I have a proven record of reducing deployment cycles by 40%,
+          cutting cloud spend by 20%, and ensuring 99.9% uptime for
+          microservices in high-traffic fintech environments through smart
+          automation and containerization.
+          <br /><br />
+          💡 My passion lies in designing efficient cloud infrastructures and
+          enabling zero-downtime deployments, while aligning infrastructure
+          goals with business needs to deliver reliable, cost-effective, and
+          future-ready solutions. 🌍✨
+        </p>
+
+        {Object.entries(skillsGrouped).map(([category, groups]) => (
+          <div key={category} className="mb-8">
+            <h3 className="text-xl font-semibold mb-4">{category}</h3>
+
+            {Object.entries(groups).map(([sub, items]) => (
+              <div
+                key={sub}
+                className="flex flex-wrap items-center gap-2 mb-3"
+              >
+                <span className="font-medium min-w-[160px]">
+                  {sub} :
+                </span>
+                {items.map(skill => (
+                  <Badge key={skill} variant="secondary">
+                    {skill}
+                  </Badge>
                 ))}
-              </CardContent>
-            </Card>
-          </TabsContent>
+              </div>
+            ))}
+          </div>
+        ))}
+      </CardContent>
+    </Card>
+  </motion.div>
+</TabsContent>
 
           {/* ================= EXPERIENCE ================= */}
           <TabsContent value="experience" className="mt-6">
