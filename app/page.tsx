@@ -267,19 +267,21 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-4">{category}</h3>
 
             {Object.entries(groups).map(([sub, items]) => (
-              <div
-                key={sub}
-                className="flex flex-wrap items-center gap-2 mb-3"
-              >
-                <span className="font-medium min-w-[160px]">
-                  {sub} :
-                </span>
+            <div
+              key={sub}
+              className="flex flex-col sm:flex-row sm:items-center gap-2 mb-3"
+            >
+              <span className="font-medium sm:min-w-[160px]">
+                {sub} :
+              </span>
+              <div className="flex flex-wrap gap-2">
                 {items.map(skill => (
                   <Badge key={skill} variant="secondary">
                     {skill}
                   </Badge>
                 ))}
               </div>
+            </div>
             ))}
           </div>
         ))}
