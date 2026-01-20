@@ -36,12 +36,14 @@ export default function Home() {
       company: "Kissht",
       period: "August 2023 - Present",
       description: [
-        "Automated CI/CD pipelines enabling faster and safer releases",
-        "Optimized AWS cloud costs resulting in ~20% savings",
-        "Containerized microservices using Docker & Kubernetes",
-        "Maintained 99.9% uptime for production systems",
-        "Reduced setup and deployment time by 40%+",
-        "Collaborated closely with product and operations teams"
+            "Executed 30+ monthly production releases across AWS ECS/EC2, handling patches, hotfixes, and incidents while maintaining 99%+ uptime",
+            "Enhanced CI/CD pipelines by fixing build and deployment failures and optimising Dockerfiles, improving deployment success by 20%+ and reducing release time",
+            "Designed and managed Terraform-based AWS infrastructure including ECS, VPC, IAM, and networking, cutting environment provisioning time by 80% from days to hours",
+            "Refactored and modularised Terraform codebases to eliminate configuration drift and enable reliable multi-environment deployments",
+            "Supported 150+ microservices serving 54M+ users and $0.5B+ loan disbursals, ensuring scalability, fault tolerance, and high availability",
+            "Implemented zero-downtime deployment strategies such as Blue/Green and Canary releases, significantly reducing production risk and customer impact",
+            "Achieved $10K+ cloud cost savings through ECS and EC2 rightsizing, autoscaling optimisation, lifecycle policies, and stale resource cleanup",
+            "Strengthened AWS security posture by enforcing least-privilege IAM, hardening security groups, resolving public exposures, and improving observability and incident response"
       ],
       skills: [
         "AWS",
@@ -197,20 +199,11 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4">About Me</h2>
 
         <p className="text-muted-foreground mb-6 leading-relaxed">
-          👋 I’m Roshan Prasad, a results-driven DevOps Engineer specializing in
-          automation and cloud cost optimization, with hands-on expertise in
-          AWS, Kubernetes, Terraform, and CI/CD pipelines for scalable,
-          resilient systems. 🚀💼
+          👋 I design, scale, and operate production-grade cloud platforms, delivering 30+ monthly AWS releases, supporting 150+ microservices, and consistently maintaining 99.9%+ uptime in high-traffic fintech environments.
           <br /><br />
-          ✨ I have a proven record of reducing deployment cycles by 40%,
-          cutting cloud spend by 20%, and ensuring 99.9% uptime for
-          microservices in high-traffic fintech environments through smart
-          automation and containerization.
+          ✨ I drive measurable business impact through automation, cutting deployment time by 40%, reducing cloud costs by 20%+, and accelerating infrastructure provisioning from days to hours using Terraform, CI/CD, and containerisation.
           <br /><br />
-          💡 My passion lies in designing efficient cloud infrastructures and
-          enabling zero-downtime deployments, while aligning infrastructure
-          goals with business needs to deliver reliable, cost-effective, and
-          future-ready solutions. 🌍✨
+          💡 I specialise in building resilient, zero-downtime systems, implementing Blue/Green and Canary deployments, strengthening cloud security, and aligning infrastructure architecture with business growth, reliability, and cost efficiency.
         </p>
 
         {Object.entries(skillsGrouped).map(([category, groups]) => (
