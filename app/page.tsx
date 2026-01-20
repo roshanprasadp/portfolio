@@ -239,7 +239,7 @@ export default function Home() {
 
         {/* ================= TABS ================= */}
         <Tabs defaultValue="about" className="w-full max-w-4xl mx-auto">
-          <TabsList className="grid w-full grid-cols-5">
+          <TabsList className="grid w-full grid-cols-4">
             <TabsTrigger value="about"><User className="mr-2 h-4 w-4" />About</TabsTrigger>
             <TabsTrigger value="experience"><Briefcase className="mr-2 h-4 w-4" />Experience</TabsTrigger>
             <TabsTrigger value="projects"><Briefcase className="mr-2 h-4 w-4" />Projects</TabsTrigger>
