@@ -157,21 +157,29 @@ export default function Home() {
     "Core DevOps": {
       Cloud: ["AWS", "Azure"],
       Orchestration: ["Kubernetes", "Docker", "EKS"],
-      IaC: ["Terraform"],
-      "CI / CD": ["Jenkins", "ArgoCD", "HELM"],
-      Observability: ["Prometheus", "Grafana", "New Relic"],
-      Security: ["ORCA Security", "DevSecOps"]
+      IaC: ["Terraform", "Ansible"],
+      "CI/CD": ["Jenkins", "AWS CodePipeline", "Git Lab"],
+      "GitOps" : ["ArgoCD", "HELM"],
+      "Observability" : ["Prometheus", "Grafana", "New Relic"],
+      "Security" : ["ORCA Security", "Guard Duty", "WAF", "Cloud Security", "SonarQube"],
+      "FinOps" : ["Amnic", "AWS Cost Explorer"]
+      
     },
     "Coding / Platforms": {
-      Languages: ["Python", "Bash", "SQL"],
+      Scripting: ["Python", "Bash"],
+      "Version Control" : ["Git", "Bitbucket", "Github"],
+      "Operating Systems" : ["Linux", "Mac", "Windows"],
+      "Databases" : ["MySql", "MongoDB", "Redis"],
       Platforms: ["Linux", "Snowflake"],
-      SCM: ["Git"]
     },
     "Soft Skills": {
-      Collaboration: ["Cross-team Collaboration", "Stakeholder Communication"],
-      Leadership: ["Ownership", "Mentoring"],
-      Process: ["Agile", "Problem Solving"]
-    }
+      Ownership: ["Production Ownership", "Accountability"],
+      Reliability: ["Incident Response", "RCA", "Blameless Postmortems"],
+      Collaboration: ["Stakeholder Communication", "Cross-functional Alignment"],
+      Mindset: ["Automation First", "Continuous Improvement"],
+      Decision: ["Risk-based Decision Making", "Operational Excellence"],
+      Knowledge: ["Runbooks", "Technical Documentation"]
+        }
   };
 
   return (
