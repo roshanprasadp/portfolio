@@ -63,9 +63,12 @@ export default function Home() {
   /* ================= PROJECTS ================= */
   const projects = [
     {
-      title: "FinTech Kubernetes Platform",
-      description:
-        "Designed and operated a scalable EKS platform supporting 50+ microservices with zero-downtime deployments.",
+      title: "Kissht - Kubernetes, Terraform, Observability",
+      description: [
+        "Delivered 30+ monthly production releases across AWS, resolving incidents while sustaining 99 percent uptime at scale.",
+        "Supported 50+ microservices serving 54M+ users with 0.5B loans, improving reliability via observability and alerts.",
+        "Mentored engineers and drove PoC’s, optimizing Terraform, CI/CD, and performance to reduce deployment failures."
+      ],
       skills: [
         "AWS",
         "EKS",
@@ -78,28 +81,73 @@ export default function Home() {
       ]
     },
     {
-      title: "CI/CD Automation Framework",
-      description:
-        "Built reusable CI/CD pipelines reducing deployment time by 40% and enabling GitOps workflows.",
+      title: "CI/CD Automation Project",
+      description: [
+        "Improved CI/CD reliability with Docker image optimisation, pipeline fixes, and boosting deployment success by 20 percent.",
+        "Migrated monolithic workloads to containerised, event-driven architectures, lowering maintenance overhead.",
+        "Applied networking best practices, optimized Docker images, and built high-throughput architectures."
+        
+      ],
       skills: [
         "Jenkins",
-        "GitHub Actions",
+        "AWS Code Pipeline",
         "Docker",
-        "GitOps",
+        "EC2",
         "CI/CD",
-        "ArgoCD"
+        "Cloud",
+        "Linux and Netowking"
       ]
     },
     {
-      title: "Cloud Cost Optimization",
-      description:
-        "Reduced AWS monthly spend by ~20% using right-sizing, auto-scaling, and observability-driven decisions.",
+      title: "Cloud and APP Security",
+      description: [
+        "Strengthened AWS security by removing public exposures, dangling DNS, and enforcing least-privilege IAM.",
+        "Hardened network and app security using security groups, firewalls, WAF rules, ORCA fixes, and CORS remediation.",
+        "Reduced operational risk through security documentation, patching workflows, and proactive vulnerability fixes."
+      ],
       skills: [
-        "AWS",
-        "FinOps",
-        "CloudWatch",
-        "Terraform",
-        "Grafana"
+        "AWS GuardDuty",
+        "WAF / Web Application Firewall",
+        "ORCA Security",
+        "Cloud Security",
+        "KMS Encryption",
+        "SonarQube",
+        "Trivy"
+      ]
+    },
+    {
+      title: "Cloud Cost Optimisation Project",
+      description: [
+        "Achieved 10K+ dollar cloud savings via rightsizing, automated cleanup, storage tiering, and serverless adoption.",
+        "Migrated eligible services from ECS to AWS Lambda, improving scalability and cutting compute and ops overhead.",
+        "Automated cost-optimisation scripts and dashboards, improving visibility and ongoing FinOps governance."
+        
+      ],
+      skills: [
+        "Amnic",
+        "AWS Cost Explorer",
+        "FinOps Techniques",
+        "Python Scripting",
+        "Bash",
+        "Automation Flow",
+        "AWS"
+      ]
+    },
+    {
+      title: "Internal Automation Projected",
+      description: [
+        "Built cross-account S3 replication pipelines transferring 10TB+ data using AWS DataSync, batch operations, and replication rules.",
+        "Automated infrastructure provisioning with Terraform, reducing environment setup time from days to hours.",
+        "Streamlined reporting and ops automation with Python and AWS services, eliminating manual effort by 25 percent."
+      ],
+      skills: [
+        "Snowflake",
+        "MySql",
+        "Python Scripting",
+        "Bash",
+        "AWS Lambda",
+        "EventBridge",
+        "Airflow"
       ]
     }
   ];
@@ -159,7 +207,7 @@ export default function Home() {
           </motion.h1>
 
           <motion.p variants={fadeIn} className="text-xl text-muted-foreground mb-6">
-            👩‍💻 DevOps ☁️ Cloud 🛡️ DevSecOps ⚙️ Engineer ⭐
+            🛡️ DevSecOps  ☁️ Cloud  📈 SRE  🤖 Agentic AI
           </motion.p>
 
           <motion.div variants={staggerChildren} className="flex gap-4">
@@ -261,21 +309,31 @@ export default function Home() {
           </TabsContent>
 
           {/* ================= PROJECTS ================= */}
-          <TabsContent value="projects" className="mt-6">
-            {projects.map((project, index) => (
-              <Card key={index} className="mb-4">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.skills.map(skill => (
-                      <Badge key={skill} variant="outline">{skill}</Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </TabsContent>
+<TabsContent value="projects" className="mt-6">
+  {projects.map((project, index) => (
+    <Card key={index} className="mb-4">
+      <CardContent className="p-6">
+        <h3 className="text-xl font-semibold">{project.title}</h3>
+
+        <ul className="list-disc pl-5 mb-4 space-y-1">
+          {project.description.map((point, i) => (
+            <li key={i} className="text-muted-foreground">
+              {point}
+            </li>
+          ))}
+        </ul>
+
+        <div className="flex flex-wrap gap-2">
+          {project.skills.map(skill => (
+            <Badge key={skill} variant="outline">
+              {skill}
+            </Badge>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  ))}
+</TabsContent>
 
           {/* ================= CERTIFICATIONS ================= */}
           <TabsContent value="Certifications" className="mt-6">
