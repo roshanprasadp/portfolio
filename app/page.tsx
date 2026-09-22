@@ -90,6 +90,62 @@ export default function Home() {
 
   /* ================= PROJECTS ================= */
   const projects = [
+      {
+    title: "DAZN - Cloud Security, Wiz, SecOps Automation",
+    description: [
+      "Developed centralized Wiz dashboards across multiple AWS accounts to monitor cloud risks, vulnerabilities, misconfigurations, and compliance posture.",
+      "Automated Microsoft Teams and email alerts for critical security findings, improving incident visibility and enabling proactive SecOps response.",
+      "Supported threat hunting, microservice security reviews, change assessments, and security control validation to strengthen enterprise cloud security."
+    ],
+    skills: [
+      "AWS",
+      "Wiz Security",
+      "Cloud Security",
+      "Vulnerability Management",
+      "Threat Hunting",
+      "SecOps",
+      "Microsoft Teams",
+      "Security Automation"
+    ]
+  },
+
+  {
+    title: "DAZN - Microsoft Sentinel Log Cost Optimization",
+    description: [
+      "Built Python-based automation using Azure Functions and Azure Blob Storage to archive Microsoft Sentinel logs and optimize long-term SIEM retention.",
+      "Implemented Terraform infrastructure and GitHub Actions pipelines to automate deployment, management, and repeatable execution of the archival workflow.",
+      "Reduced long-term SIEM storage costs through automated log archival while improving operational efficiency and reducing manual security administration."
+    ],
+    skills: [
+      "Microsoft Sentinel",
+      "Azure Functions",
+      "Azure Blob Storage",
+      "Python",
+      "Terraform",
+      "GitHub Actions",
+      "SIEM",
+      "Cloud Cost Optimization"
+    ]
+  },
+
+  {
+    title: "DAZN - AWS WAF, Edge Security & Threat Protection",
+    description: [
+      "Implemented AWS WAF and Firewall Manager managed rules to strengthen application security and protect enterprise workloads from malicious requests.",
+      "Supported JA4 fingerprint analysis, ASN reputation filtering, and route-based traffic blocking to identify suspicious activity and strengthen edge security.",
+      "Collaborated with Security Architecture, Cloud, DevOps, SIEM, SOAR, and Anti-Piracy teams to investigate incidents and improve security controls."
+    ],
+    skills: [
+      "AWS WAF",
+      "AWS Firewall Manager",
+      "JA4 Fingerprinting",
+      "ASN Filtering",
+      "Route-based Blocking",
+      "Application Security",
+      "SIEM",
+      "SOAR"
+    ]
+  },
     {
       title: "Kissht - Kubernetes, Terraform, Observability",
       description: [
@@ -181,34 +237,41 @@ export default function Home() {
   ];
 
   /* ================= SKILLS (3 SECTIONS) ================= */
-  const skillsGrouped = {
-    "Core DevOps": {
-      Cloud: ["AWS", "Azure"],
-      Orchestration: ["Kubernetes", "Docker", "EKS"],
-      IaC: ["Terraform", "Ansible"],
-      "CI/CD": ["Jenkins", "AWS CodePipeline", "Git Lab"],
-      "GitOps" : ["ArgoCD", "HELM"],
-      "Observability" : ["Prometheus", "Grafana", "New Relic"],
-      "Security" : ["ORCA Security", "Guard Duty", "WAF", "Cloud Security", "SonarQube"],
-      "FinOps" : ["Amnic", "AWS Cost Explorer"]
-      
-    },
-    "Coding / Platforms": {
-      Scripting: ["Python", "Bash"],
-      "Version Control" : ["Git", "Bitbucket", "Github"],
-      "Operating Systems" : ["Linux", "Mac", "Windows"],
-      "Databases" : ["MySql", "MongoDB", "Redis"],
-      Platforms: ["Linux", "Snowflake"],
-    },
-    "Soft Skills": {
-      Ownership: ["Production Ownership", "Accountability"],
-      Reliability: ["Incident Response", "RCA", "Blameless Postmortems"],
-      Collaboration: ["Stakeholder Communication", "Cross-functional Alignment"],
-      Mindset: ["Automation First", "Continuous Improvement"],
-      Decision: ["Risk-based Decision Making", "Operational Excellence"],
-      Knowledge: ["Runbooks", "Technical Documentation"]
-        }
-  };
+const skillsGrouped = {
+  "Cloud Security": {
+    "Cloud Security": ["Wiz Security", "Microsoft Sentinel", "Microsoft Defender"],
+    "Application Security": ["AWS WAF", "Firewall Manager", "IAM", "SonarQube"],
+    "Network Security": ["JA4 Fingerprinting", "ASN Filtering", "Route-based Blocking"],
+    "Security Monitoring": ["Vulnerability Management", "Security Findings", "Cloud Risk Monitoring"]
+  },
+
+  "Core DevOps": {
+    Cloud: ["AWS", "Azure"],
+    Orchestration: ["Kubernetes", "Docker", "EKS"],
+    IaC: ["Terraform", "Ansible"],
+    "CI/CD": ["Jenkins", "GitHub Actions", "AWS CodePipeline"],
+    "GitOps": ["ArgoCD", "Helm"],
+    "Observability": ["Prometheus", "Grafana", "New Relic", "Coralogix"],
+    "FinOps": ["AWS Cost Explorer", "EC2 Rightsizing", "S3 Lifecycle", "Spot Adoption"]
+  },
+
+  "Coding / Platforms": {
+    Scripting: ["Python", "Bash"],
+    "Version Control": ["Git", "GitHub", "Bitbucket"],
+    "Operating Systems": ["Linux", "Windows", "macOS"],
+    "Databases": ["PostgreSQL", "MySQL", "Redis", "Elasticsearch"],
+    Platforms: ["Snowflake", "AWS Lambda", "Azure Functions", "Azure Blob Storage"]
+  },
+
+  "Soft Skills": {
+    Ownership: ["Production Ownership", "Accountability"],
+    Reliability: ["Incident Response", "RCA", "Blameless Postmortems"],
+    Collaboration: ["Stakeholder Communication", "Cross-functional Alignment"],
+    Mindset: ["Automation First", "Continuous Improvement"],
+    Decision: ["Risk-based Decision Making", "Operational Excellence"],
+    Knowledge: ["Runbooks", "Technical Documentation", "Knowledge Sharing"]
+  }
+};
 
   return (
     <main className="min-h-screen bg-black">
@@ -282,13 +345,13 @@ export default function Home() {
       <CardContent className="p-6">
         <h2 className="text-2xl font-semibold mb-4">About Me</h2>
 
-        <p className="text-muted-foreground mb-6 leading-relaxed">
-          👋 I design, scale, and operate production-grade cloud platforms, delivering 30+ monthly AWS releases, supporting 150+ microservices, and consistently maintaining 99.9%+ uptime in high-traffic fintech environments.
-          <br /><br />
-          ✨ I drive measurable business impact through automation, cutting deployment time by 40%, reducing cloud costs by 20%+, and accelerating infrastructure provisioning from days to hours using Terraform, CI/CD, and containerisation.
-          <br /><br />
-          💡 I specialise in building resilient, zero-downtime systems, implementing Blue/Green and Canary deployments, strengthening cloud security, and aligning infrastructure architecture with business growth, reliability, and cost efficiency.
-        </p>
+    <p className="text-muted-foreground mb-6 leading-relaxed">
+      👋 I design and secure production-grade cloud environments across AWS and Azure, specializing in cloud security, risk visibility, vulnerability management, SIEM, WAF, and proactive security operations.
+      <br /><br />
+      ✨ I drive measurable security impact through Wiz, Microsoft Sentinel, Azure Functions, Terraform, and GitHub Actions, automating security workflows, optimizing SIEM storage costs, and strengthening cloud security posture.
+      <br /><br />
+      💡 I also specialize in DevOps and cloud infrastructure, leveraging Kubernetes, Terraform, CI/CD, GitOps, observability, and Python automation to build secure, scalable, reliable, and cost-efficient cloud platforms.
+    </p>
 
         {Object.entries(skillsGrouped).map(([category, groups]) => (
           <div key={category} className="mb-8">
