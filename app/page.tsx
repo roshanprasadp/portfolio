@@ -57,7 +57,7 @@ export default function Home() {
         "Python",
         "Automations"
       ]
-    }
+    },
 
       {
       title: "DevOps Engineer",
