@@ -32,9 +32,37 @@ export default function Home() {
   /* ================= EXPERIENCE ================= */
   const experiences = [
     {
+      title: "Cloud Security Engineer",
+      company: "DAZN",
+      period: "June 2026 - Present",
+      description: [
+          "Developed centralized Wiz Security dashboards to monitor cloud risks, vulnerabilities, misconfigurations, and security findings across multiple AWS accounts for SecOps teams.",
+          "Engineered Python-based automation using Azure Functions and Azure Blob Storage to archive Microsoft Sentinel logs and optimize long-term SIEM storage costs.",
+          "Implemented Terraform and GitHub Actions to automate infrastructure deployment and management for Microsoft Sentinel log archival and cloud security workflows.",
+          "Designed Logic App workflows to automate Microsoft Teams and email notifications for critical security findings, vulnerabilities, and proactive SecOps response.",
+          "Implemented AWS WAF rules and Firewall Manager managed rules to strengthen application security and protect enterprise cloud workloads from malicious requests.",
+          "Collaborated with Security Architecture, Cloud, DevOps, SIEM, SOAR, and Anti-Piracy teams to support incident response across enterprise cloud environments.",
+          "Supported JA4 fingerprint scanning, ASN reputation filtering, and route-based traffic blocking to strengthen edge security and mitigate suspicious network activity.",
+          "Participated in threat hunting, microservice security reviews, change request assessments, and security control validation to proactively identify cloud security risks."
+
+      ],
+      skills: [
+        "AWS",
+        "Azure",
+        "Terraform",
+        "Github Actions",
+        "WIZ",
+        "Coralogix",
+        "Azure Sentinel & Defender",
+        "Python",
+        "Automations"
+      ]
+    }
+
+      {
       title: "DevOps Engineer",
       company: "Kissht",
-      period: "August 2023 - Present",
+      period: "August 2023 - June 2026",
       description: [
             "Executed 30+ monthly production releases across AWS ECS/EC2, handling patches, hotfixes, and incidents while maintaining 99%+ uptime",
             "Enhanced CI/CD pipelines by fixing build and deployment failures and optimising Dockerfiles, improving deployment success by 20%+ and reducing release time",
