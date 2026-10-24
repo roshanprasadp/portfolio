@@ -326,6 +326,9 @@ const skillsGrouped = {
               </motion.div>
             ))}
           </motion.div>
+          <a href="/blog/" className="mt-5 inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/5 px-4 py-2 text-sm text-sky-200 transition-colors hover:border-sky-300/60 hover:bg-sky-400/10">
+            Read my engineering blog <span aria-hidden="true">↗</span>
+          </a>
         </motion.div>
 
         {/* ================= TABS ================= */}
