@@ -306,7 +306,7 @@ const skillsGrouped = {
           </motion.h1>
 
           <motion.p variants={fadeIn} className="text-xl text-muted-foreground mb-6">
-            🛡️ DevSecOps    ☁️ Cloud    📈 SRE    🤖 Agentic AI
+            🛡️ Cloud Security Engineer   ☁️ DevSecOps Engineer   🤖 Agentic AI Security
           </motion.p>
 
           <motion.div variants={staggerChildren} className="flex gap-4">
